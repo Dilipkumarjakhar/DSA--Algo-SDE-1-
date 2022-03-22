@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holi</title>
+    <style>
+        #main{
+            margin:auto;
+             height: 90vh;
+             width: 90%;
+             border:1px solid black;
+        }
+        #smains{
+             margin:5% auto;
+             height: 30vh;
+             width: 80%;
+             border:1px solid black;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+        }
+        .smain{
+            
+            margin-top:1%;
+            display: inline-block;
+            height:50px;
+            width:50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+             border-left:3px solid black;
+             border-right:1px solid black;
+             border-bottom:1px solid black;
+            /* background-color:blueviolet; */
+            border-radius: 50%;
+            animation-name:dilip;
+            animation-duration:1.5s;
+            /* box-shadow: 1px 0 10px 0.1rem rgb(75, 75, 73); */
+            box-shadow: 10px 10px 10px 0.1rem rgb(150, 148, 148);
+            animation-delay:linear ease-in-out;
+            
+        }
+        
+        @keyframes dilip {
+            0%{
+                
+                background-color:rgb(245, 241, 14);
+                animation-delay: 2s linear infinite;
+               
+                
+            }
+            20%{
+                
+                
+                animation-delay: 1s;
+            
+                background-color:rgb(11, 247, 247);
+                
+            }
+            50%{
+         
+                background-color:rgb(158, 216, 243);
+                animation-delay: 1.2s;
+            }
+        70%{
+        
+                background-color:rgb(241, 236, 237);
+                animation-delay: 1.7s;
+              
+    }
+          
+            100%{
+       
+                background-color:rgb(37, 219, 61);
+                animation-delay: 3.5s;
+            
+        }
+            
+            
+        }
+        .smain:nth-child(1){
+            animation-delay: 1.2s linear infinite;
+            background-color:orange;
+        }
+        .smain:nth-child(2){
+            
+            
+            /* background-color:rgb(255, 255, 255); */
+            animation-delay: 1.5s linear infinite;
+            background-color:orange;
+            
+            
+            }
+        .smain:nth-child(3){
+           
+            background-color:rgb(255, 255, 255);
+            animation-delay: 2s linear infinite;
+            
+            }
+        .smain:nth-child(4){
+            
+            background-color:green;
+            animation-delay: 2.5s linear infinite;
+            
+        }
+        .smain:nth-child(5){
+            
+            background-color:green;
+            
+            animation-delay: 3s linear infinite;
+          
+            }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="smains">
+
+            <div class="smain"></div>
+            <div class="smain"></div>
+        <div class="smain"></div>
+        <div class="smain"></div>
+        <div class="smain"></div>
+    </div>
+    </div>
+</body>
+</html>
