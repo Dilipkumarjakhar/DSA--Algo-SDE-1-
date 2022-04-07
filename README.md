@@ -5,6 +5,7 @@ Amazon
 ## Topics
 
 <!-- ~~~1~~ -->
+**1.Anonymous Function:-**
 ```
-**1.Anonymous Function:-** A function without name it is called Anonymous function.
+ A function without name it is called Anonymous function.
 ```
