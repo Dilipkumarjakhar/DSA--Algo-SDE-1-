@@ -6,5 +6,5 @@ Amazon
 
 <!-- ~~~1~~ -->
 ```bash
-1.Anonymous Function --->A function without name it is called Anonymous function....
+** 1.Anonymous Function:-** A function without name it is called Anonymous function.
 ```
