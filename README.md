@@ -6,7 +6,7 @@ Amazon
 
 <!-- ~~~1~~ -->
 
-**Anonymous Function**
 - 
+**Anonymous Function**
 ```A function without name it is called Anonymous function.
 ```
