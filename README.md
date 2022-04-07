@@ -1,8 +1,10 @@
 # DSA--Algo-SDE-1-
 Amazon
 
-# list
 
-``` list ```
+## Topics
+
 <!-- ~~~1~~ -->
-Anonymous Function --->A function without name it is called Anonymous function....
+```bash
+1.Anonymous Function --->A function without name it is called Anonymous function....
+```
