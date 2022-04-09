@@ -57,6 +57,7 @@ o/p:- 1 2
 - function inside function .
 - we can pass the value as argument and we can use that values as parameters in another function .
 - Ability to Used like values.
+
 ```
 var b=function (){
   return function (){
@@ -71,17 +72,12 @@ o/p:- function (){
 
 ```
 **7.Arrow Functions**
-```
-An Arrow Function is used to write an expression in React.
-```
+- An Arrow Function is used to write an expression in React.
 
-```
-It allows users to manually bind components easily.
-```
+- It allows users to manually bind components easily.
 
-```
-The functionality of arrow functions is very useful when you are working with higher-order function particularly.
-```
+- The functionality of arrow functions is very useful when you are working with higher-order function particularly.
+
 
 ```
 Example:
@@ -108,15 +104,11 @@ o/p:- Arrow function
 ## **<--React or Front-End-->**
 
 - React:-
-```
-React is a widely used javascript library that was launched in 2011.
-it was created by developers at facebook and it is primarily used
+- React is a widely used javascript library that was launched in 2011.
+- it was created by developers at facebook and it is primarily used
 for frontend development.
-```
-```
-React uses the component based approach which ensures to help you
+
+- React uses the component based approach which ensures to help you
 build components that possess high reuseability.
-```
-```
-React is well known for developing and designing complex mobile user interfaces and web applications.
-```
+
+- React is well known for developing and designing complex mobile user interfaces and web applications.
