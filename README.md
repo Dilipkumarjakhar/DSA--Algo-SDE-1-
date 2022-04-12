@@ -198,3 +198,25 @@ for frontend development.
 - React uses the component based approach which ensures to help you
 build components that possess high reuseability.
 - React is well known for developing and designing complex mobile user interfaces and web applications.
+
+**What is a Redux in React?**
+- React Redux is the official React UI bindings layer for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update state
+
+**What is react router?**
+- React Router is a standard library for routing in React. 
+- It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL
+
+**What does callback function do?**
+- A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action
+```
+function myDisplayer(some) {
+  console.log(some);
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+```
