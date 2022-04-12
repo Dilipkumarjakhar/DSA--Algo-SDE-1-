@@ -31,3 +31,118 @@
 // let b="6"
 // let s=a+b;
 // console.log(typeof s,a+b);
+
+
+ //     setTimeout(function () {
+//    console.log('dilip')
+// },1000)
+
+// function x(y){
+//     console.log('x:')
+//     y()
+// }
+
+// x(function y(){
+//     console.log('y:')
+
+// }); -->
+
+//   const n=9;
+//  const a=[];
+//  for(var i=0;i<=n;i++){
+//      a.push(i+1);
+//     }
+//     console.log('a:', a) 
+
+// <-----objects concept------>
+// let x=[]//{1:1}//[]//[1];
+// let y=[]//{2:1}//[]//[1];
+
+// x.map((item)=>{
+//   console.log(item)
+// })
+// console.log(x[0]==y[0])//false//flase//true
+// console.log(x[0]===y[0])//false//false//true
+
+
+// <--------concept of closure-------->
+
+// let sum=(a)=>{
+//     let z=10
+//     let  s=(x)=>{
+//         let t=(x)=>{
+//             console.log('dilip',x+z)
+//         }
+//         t(x)
+//     }
+//     s(a)
+// }
+// sum(1)//dilip 11
+
+// let outer=(a)=>{
+//     let x=a;
+//     function inner(y){
+//         console.log('sum',x+y)
+        
+//     }
+//     // inner(a)
+//    return inner
+// }
+
+// outer(1);
+// let store=outer(1);
+// // console.log('store:', store())
+// store(1)
+// --------higher order function----->       
+// 1.----------map-------
+// const arr=[12,3,4,5];
+
+// function double(x){
+//     return 2*x;
+// }
+// function triple(x){
+//     return x.toString(2);
+// }
+// let res1=arr.map(double)
+// console.log('res1:', res1)
+
+// let res2=arr.map(triple)
+// console.log('res2:', res2)
+
+// let a=[1,2,3,4,5];
+
+// let out=a.map(function(x){
+//     return 10*x
+// })
+// let out=a.map(function(x){
+//     return 10*x
+// })
+// let out=a.map((x)=>1*x)
+// console.log('out:', out)
+
+// 2.<-filter----->
+
+// let a=[3,4,5,2,10];
+
+// let out=a.filter((x)=>{
+//     return x>5;
+// })
+// console.log('out:', out)
+
+// 3.reduce
+
+let a=[1,7,3,9,10,20];
+
+ let out=a.reduce((acc,curr)=>{
+    acc=acc+curr;
+    return acc;
+},0)
+console.log('out:', out)
+
+ let mx=a.reduce((max,curr)=>{
+     if(curr>max){
+        max=curr;
+     }
+     return max;
+    },0)
+console.log('out:', mx)

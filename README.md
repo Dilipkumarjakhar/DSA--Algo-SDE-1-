@@ -98,6 +98,97 @@ var b=function ()=>{
 b()
 o/p:- Arrow function
 ```
+**8.Closure Functions**
+- closer in action that is inner function can have access to the outer function variables as well as all the global variables.
+- A closure is the combination of a function and lexical
+environment within which that function was declared.
+
+- [the return statment does not execute the inner function - function is execute only when followed by (),
+but rather then return statment return the entire body of the function.] 
+```
+let sum=(a)=>{
+    let z=10
+    function y(a){
+        console.log('dilip',a+z)
+        
+    }
+    y(a)
+}
+sum(1)
+
+o/p:-->dilip 11
+
+let outer=(a)=>{
+    let x=a;
+    function inner(y){
+        console.log('sum',x+y)
+        
+    }
+    // inner(a)
+   return inner
+}
+
+outer(1);
+let store=outer(1);
+
+store(1)
+o/p:->sum 2
+```
+
+**9.function Hoisting**
+- for each function(function declarations) a property is created in the variable object.which is pointing to function
+- for each function(variable declarations) a property is created in the variable object.which is set undefined.
+- Argument object are created that were passed into the function.
+- lin1 and lin2 is called **Hoisting** in js.
+- hoisting is js mechanism where variable and function declaration are moved to the top of there scope before code execution.
+
+``` 
+this is normale:
+const sum=(a,b)=>{
+    let c=10;
+    console.log(a+b+c);
+}
+sum(3,4);
+o/p:->17
+```
+
+```
+- This is Hoisting :--------|>
+sum(3,4);              |const sum=(a,b)=>{
+const sum=(a,b)=>{     | let c=10;
+    let c=10;          |  console.log(a+b+c);
+    console.log(a+b+c);|  }
+}                      |sum(3,4);
+                       |
+o/p:->17               |o/p:->17  
+```
+
+**10.Use Strict**
+- It's a new feature of ECMAScript 5.
+- The statment 'use strict'; instructs the browser the browser to use the strict mode which is a reduced and safer feature set of js.
+```
+normale example
+function sum(a,b){
+    add=a+b;
+    console.log(add)
+}
+sum(10,12)
+o/p:-22;
+```
+```
+strict example:-
+'use strict'
+function sum(a,b){
+    add=a+b;
+    console.log(add)
+}
+sum(10,12)
+o/p:-add is undefined
+```
+
+**11.This Keyword**
+- console.log(this)//window object 
+
 
 ## React or Front-End
 **React**
