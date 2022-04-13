@@ -188,8 +188,16 @@ o/p:-add is undefined
 
 **11.This Keyword**
 - console.log(this)//window object 
+**12.Promises**
+- Promises are used to handle asynchronous operations in javascript.
+- They are easy to manage when dealing with multiple asynchronous operations where callbacks can create hell
+leading to unmanageable code.
 
+- A Promise is an object that keeps track about whether
+a creation event has happened already or not.
 
+```
+```
 ## React or Front-End
 **React**
 - React is a widely used javascript library that was launched in 2011.
@@ -199,8 +207,18 @@ for frontend development.
 build components that possess high reuseability.
 - React is well known for developing and designing complex mobile user interfaces and web applications.
 
+**useEffect**
+- What does useEffect do? By using this Hook, you tell React that your component needs to do something after render. 
+- React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.
+
+
+**What is the useState in react?**
+- The React useState Hook allows us to track state in a function component. 
+- State generally refers to data or properties that need to be tracking in an application.
+
 **What is a Redux in React?**
-- React Redux is the official React UI bindings layer for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update state
+- React Redux is the official React UI bindings layer for Redux. 
+- It lets your React components read data from a Redux store, and dispatch actions to the store to update state
 
 **What is react router?**
 - React Router is a standard library for routing in React. 

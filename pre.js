@@ -131,18 +131,48 @@
 
 // 3.reduce
 
-let a=[1,7,3,9,10,20];
+// let a=[1,7,3,9,10,20];
 
- let out=a.reduce((acc,curr)=>{
-    acc=acc+curr;
-    return acc;
-},0)
-console.log('out:', out)
+//  let out=a.reduce((acc,curr)=>{
+//     acc=acc+curr;
+//     return acc;
+// },0)
+// console.log('out:', out)
 
- let mx=a.reduce((max,curr)=>{
-     if(curr>max){
-        max=curr;
-     }
-     return max;
-    },0)
-console.log('out:', mx)
+//  let mx=a.reduce((max,curr)=>{
+//      if(curr>max){
+//         max=curr;
+//      }
+//      return max;
+//     },0)
+// console.log('out:', mx)
+
+// promises      
+// 3 stage      
+// 1.pending
+// 2.resolve ->fullfilled
+// 3.reject
+// let prom=new Promise((resolve,reject)=>{
+//     let i=1;
+
+//     if(!i){
+//         resolve('succes')
+//     }
+//     else{
+//         reject('err')
+//     }
+
+// })
+
+// prom.then((suc)=>{
+//     console.log(suc)
+// })
+// prom.catch((err)=>{
+//     console.log(err)})
+
+let x=8;
+
+// let z=(--x)+(x=10);
+let z=x++ + x++ +x++;
+console.log(z)
+console.log(x)
