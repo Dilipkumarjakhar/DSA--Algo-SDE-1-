@@ -185,7 +185,34 @@ function sum(a,b){
 sum(10,12)
 o/p:-add is undefined
 ```
+**Let,var and const** 
+- let and const is a block scope variable.
+```
+let a=1;
 
+if(a){
+    let x=2;
+    console.log('x:', x)
+    }
+console.log('x:', x)
+console.log('a:', a)
+o/p:-
+x:2
+x:undefined;
+a:1;
+```
+- var is a function scope variable.
+
+var sum=100;
+function d(a,b){
+    if(sum>99){
+        var sum=a+b;
+    }
+    console.log(sum);
+
+}
+console.log(d(10,20));
+o/p:-30
 **11.This Keyword**
 - console.log(this)//window object 
 **12.Promises**
