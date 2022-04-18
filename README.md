@@ -225,6 +225,36 @@ a creation event has happened already or not.
 
 ```
 ```
+
+**13.Event Loop**
+- javaScript is single synchronous thread langauge.
+- It has one CallStack it can do one thing at a time this callstack persent inside javaScript Engine.
+- All The js code executed inside callstack.
+- WhenEver any Javascript code run that time Global
+  Execution context will be created.
+- The GEC will be pushed inside callstack.
+- Inside GEC code run line by line|    -------   |
+                                  |    -------   |
+                                  | ----GEC----- | 
+                                  |______________|
+- (Line no 243 to 245)Function a(){console.log('a')} allocated the memory.
+- whenever function invocations(line no 246) happen that time GEC will created.
+- This function invocations pushed inside callstack.
+- so a() in inside the callstack so the code of a() function will executed line by line.
+- when the end of function a() the function a() pops out of the callstack.
+```
+ __________________
+|                  |   function a(){
+|   |          |   |     console.log("a);
+|   |          |   |     }
+|   |          |   |     a();
+|   |          |   |     console.log('end)
+|   |          |   |
+|   |call stack|   |
+|   |__________|   |
+| js Engine        | 
+|__________________|
+```
 ## React or Front-End
 **React**
 - React is a widely used javascript library that was launched in 2011.
@@ -237,7 +267,6 @@ build components that possess high reuseability.
 **useEffect**
 - What does useEffect do? By using this Hook, you tell React that your component needs to do something after render. 
 - React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.
-
 
 **What is the useState in react?**
 - The React useState Hook allows us to track state in a function component. 
