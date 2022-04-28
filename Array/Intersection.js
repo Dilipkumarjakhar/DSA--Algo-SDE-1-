@@ -1,26 +1,26 @@
-let A=[1,2,2,3,2,5,5]
-let B=[2,2,3]
-let C=[1,4,2,3,5,2,5,0];
+// let A=[1,2,2,3,2,5,5]
+// let B=[2,2,3]
+// let C=[1,4,2,3,5,2,5,0];
 
-let res=[];
-let newres=[];
-for(let i=0;i<B.length;i++){
-    for(let j=0;j<A.length;j++){
-        if(B[i]===A[j]){
-            res.push(B[i])
-            // break;
-        }
-    }
-}
-for(let i=0;i<res.length;i++){
-    for(let j=0;j<C.length;j++){
-        if(B[i]==C[j]){
-            newres.push(B[i])
-            break;
-        }
-    }
-}
-console.log('res:', newres)
+// let res=[];
+// let newres=[];
+// for(let i=0;i<B.length;i++){
+//     for(let j=0;j<A.length;j++){
+//         if(B[i]===A[j]){
+//             res.push(B[i])
+//             // break;
+//         }
+//     }
+// }
+// for(let i=0;i<res.length;i++){
+//     for(let j=0;j<C.length;j++){
+//         if(B[i]==C[j]){
+//             newres.push(B[i])
+//             break;
+//         }
+//     }
+// }
+// console.log('res:', newres)
 
 // let obj1={};
 // let obj2={};
@@ -94,3 +94,45 @@ console.log('res:', newres)
 
 //     console.log(res);
 // }
+
+
+// inter section using es6 features
+
+// let arr1=[1,2,2];
+// let arr2=[2,2];
+
+// const intersection=arr1.filter((ele)=>{
+//     return arr2.includes(ele)
+// })
+// console.log([...new Set(intersection)])
+
+//menually intersection 
+// t.c=o(n**2);
+// s.c=o(n);
+// 
+
+// optimization 
+//T.C=O(n)  
+//S.C=O(n)  
+// a1 should be sorted  
+// a2 should be sorted  
+let a1=[1,2,2,3,3,3];
+let a2=[2,3];
+let res=[];
+
+let a=0;
+let b=0;
+while(a<a1.length && b<a2.length){
+    if(a1[a]<a2[b]){
+       a++;
+    }
+    if(a1[a]<a2[b]){
+      b++;
+}
+    else{
+        res.push(a1[a]);
+        a++;
+        b++;
+    }
+}
+console.log(res)

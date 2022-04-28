@@ -170,9 +170,75 @@
 // prom.catch((err)=>{
 //     console.log(err)})
 
-let x=8;
+// let x=8;
 
 // let z=(--x)+(x=10);
-let z=x++ + x++ +x++;
-console.log(z)
-console.log(x)
+// let y=x++ + x++ +x++;//8//9//10
+// console.log(y)
+// console.log(z)
+// let a =20;
+// function foo(){
+//     console.log(a);
+//     var a=10;
+// }
+// foo();
+// const obj={a:'dilip',b:'aman',a:'raj'}
+// console.log('obj:', obj)
+// callback
+
+// const greating=(names)=>{
+//     let name='dilip';
+//     console.log(name,names)
+//     }
+// const callback=(callback)=>{
+//     let names='callbackname';
+//     callback(names)
+// }
+// callback(greating)
+
+//promiss
+
+
+// const promise=new Promise((res,rej)=>{
+//     let isName=true;
+//     if(!isName){
+//         res(isName);
+//     }
+//     else{
+//         rej('error')
+//     }
+// })
+// promise.then((res)=>{
+//     console.log("resolved",res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+
+//navigater in javascript
+
+let nav=navigator.language;
+let nav1=window.navigator.language;
+let userAgent=window.navigator.userAgent;
+
+let x=document.getElementById("navigater_language");
+x.innerHTML="navigater.language"+":"+nav;
+let y=document.getElementById("window_navigater_lang");
+y.innerHTML="window.navigater.lang"+":"+nav1;
+
+let browserName;
+if(userAgent.match(/chrome|chromium|crios/i)){
+    browserName = "chrome";
+}else if(userAgent.match(/firefox|fxios/i)){
+    browserName = "firefox";
+}  else if(userAgent.match(/safari/i)){
+    browserName = "safari";
+}else if(userAgent.match(/opr\//i)){
+    browserName = "opera";
+} else if(userAgent.match(/edg/i)){
+    browserName = "edge";
+}else{
+    browserName="No browser detection";
+}
+let z=document.getElementById("navigater_userAgent");
+z.innerHTML=" "+" "+":"+browserName;
