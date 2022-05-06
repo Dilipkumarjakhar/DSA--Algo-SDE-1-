@@ -1,9 +1,10 @@
 **JAVASCRIPT INTERVIEW Topics**
-**How to find which browser user use for Browsing the website**
+## waht is JavaScript ##
+**How to find which browser user use for Browsing the  website**
 - Steps to detect browser name in JavaScript
- 1.HTML markup to display browser name.
- 2.JavaScript code to detect browser using useragent.match
- 3.JavaScript code to detect browser using useragent.indexOf
+ - 1.HTML markup to display browser name.
+ - 2.JavaScript code to detect browser using useragent.match
+ - 3.JavaScript code to detect browser using useragent.indexOf
 
 
 ```

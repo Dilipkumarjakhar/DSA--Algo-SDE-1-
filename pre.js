@@ -214,7 +214,22 @@
 //     console.log(err);
 // })
 
+let a=NaN;
 
+let b=isNaN;
+
+// console.log(a===null)
+// console.log(a===undefined)
+// console.log(a!==undefined)
+// if(a!==a){
+    console.log("string"*10===a)
+    console.log(a==='string')
+    console.log(a!==a)
+    console.log(isNaN(a))
+    // console.log(a===a)
+    // console.log(b!==b)
+    // console.log(b===b)
+    // }
 //navigater in javascript
 
 let nav=navigator.language;

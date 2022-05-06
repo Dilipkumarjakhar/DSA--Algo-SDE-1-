@@ -1,4 +1,4 @@
-//Dutch Nation Flag Algorithm//
+//Dutch Nation Flag Algorithm/
 
 let arr=[0,1,2,1,0,1,2,2,0];
 let n=arr.length;
