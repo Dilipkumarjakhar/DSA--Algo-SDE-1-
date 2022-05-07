@@ -214,46 +214,77 @@
 //     console.log(err);
 // })
 
-let a=NaN;
+// let a=NaN;
 
-let b=isNaN;
+// let b=isNaN;
 
 // console.log(a===null)
 // console.log(a===undefined)
 // console.log(a!==undefined)
 // if(a!==a){
-    console.log("string"*10===a)
-    console.log(a==='string')
-    console.log(a!==a)
-    console.log(isNaN(a))
+    // console.log("string"*10===a)
+    // console.log(a==='string')
+    // console.log(a!==a)
+    // console.log(isNaN(a))
     // console.log(a===a)
     // console.log(b!==b)
     // console.log(b===b)
     // }
 //navigater in javascript
 
-let nav=navigator.language;
-let nav1=window.navigator.language;
-let userAgent=window.navigator.userAgent;
+// let nav=navigator.language;
+// let nav1=window.navigator.language;
+// let userAgent=window.navigator.userAgent;
 
-let x=document.getElementById("navigater_language");
-x.innerHTML="navigater.language"+":"+nav;
-let y=document.getElementById("window_navigater_lang");
-y.innerHTML="window.navigater.lang"+":"+nav1;
+// let x=document.getElementById("navigater_language");
+// x.innerHTML="navigater.language"+":"+nav;
+// let y=document.getElementById("window_navigater_lang");
+// y.innerHTML="window.navigater.lang"+":"+nav1;
 
-let browserName;
-if(userAgent.match(/chrome|chromium|crios/i)){
-    browserName = "chrome";
-}else if(userAgent.match(/firefox|fxios/i)){
-    browserName = "firefox";
-}  else if(userAgent.match(/safari/i)){
-    browserName = "safari";
-}else if(userAgent.match(/opr\//i)){
-    browserName = "opera";
-} else if(userAgent.match(/edg/i)){
-    browserName = "edge";
-}else{
-    browserName="No browser detection";
-}
-let z=document.getElementById("navigater_userAgent");
-z.innerHTML=" "+" "+":"+browserName;
+// let browserName;
+// if(userAgent.match(/chrome|chromium|crios/i)){
+//     browserName = "chrome";
+// }else if(userAgent.match(/firefox|fxios/i)){
+//     browserName = "firefox";
+// }  else if(userAgent.match(/safari/i)){
+//     browserName = "safari";
+// }else if(userAgent.match(/opr\//i)){
+//     browserName = "opera";
+// } else if(userAgent.match(/edg/i)){
+//     browserName = "edge";
+// }else{
+//     browserName="No browser detection";
+// }
+// let z=document.getElementById("navigater_userAgent");
+// z.innerHTML=" "+" "+":"+browserName;
+
+// function Game(){
+//     this.name="Hockey"
+// }
+// object=new Game();
+// console.log(Object);
+// console.log(object);
+// console.log('[object Object]'=={})
+// // console.log({Object})
+// console.log('[Object object]'==={})
+
+let promise = new Promise((resolve, reject) => {
+    console.log('1');
+
+    async function d(){
+        let a=1;
+        if(a){
+            await resolve(a);
+        }else{
+            reject(error)
+        }
+        
+        console.log('res')
+    }
+    console.log('2');
+    d()
+    console.log('3')
+    
+})
+promise.then((a)=>console.log(a));
+console.log('4')
