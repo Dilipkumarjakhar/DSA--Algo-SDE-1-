@@ -294,3 +294,21 @@ function myCalculator(num1, num2, myCallback) {
 
 myCalculator(5, 5, myDisplayer);
 ```
+
+
+**What is JSX?**
+JSX is a shorthand for JavaScript XML. This is a type of file used by React which utilizes the expressiveness of JavaScript along with HTML like template syntax. This makes the HTML file really easy to understand. This file makes applications robust and boosts its performance. Below is an example of JSX:
+
+```
+render(){
+    return(        
+          
+<div>
+             
+<h1> Hello World from Edureka!!</h1>
+ 
+         </div>
+ 
+    );
+}
+```
